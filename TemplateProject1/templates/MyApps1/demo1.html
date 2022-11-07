@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'MyApps1/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This the demo1</title>
+</head>
+<body>
+    {% block child_block %}
+    <h2>Template filter folder</h2>
+    <hr/>
+    {% load cust_filters %}
+        <u1>
+            <li>{{ msg1|lower }}</li>
+            <li>{{ msg2|upper }}</li>
+            <li>{{ msg3|add:"----Yash" }}</li>
+            <li>{{ msg4|f5upper }}</li>
+        </u1>
+            <a href="/tempin1/">click here </a>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>base1</title>
+    <link href="{% static 'css/base1.css'  %}" rel="stylesheet">
+    {% block child_css %}
+        Here parentclass will be dine..!
+    {% endblock %}
+</head>
+<body>
+    <div align="center">
+        <h1>common for all child tempalates </h1>
+        <hr/>
+        {% block child_block %}
+        child class blocks
+        {% endblock %}
+        <h3>End of the common code </h3>
+    </div>
+</body>
+</html>

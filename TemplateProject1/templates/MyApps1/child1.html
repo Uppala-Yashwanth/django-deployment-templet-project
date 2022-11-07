@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Child class</title>
+    {% block child_css %}
+    <link href="{% static 'css/child1.css' %}" rel="stylesheet">
+    {% endblock %}
+</head>
+<body>
+    <div align="center">
+        {% block child_block %}
+        <h2> This is child class</h2>
+        {% endblock %}
+    </div>
+</body>
+</html>

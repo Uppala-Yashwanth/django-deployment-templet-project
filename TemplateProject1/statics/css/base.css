@@ -1,0 +1,29 @@
+body{
+    background-color: bisque;
+    color: crimson;
+    text-align: center;
+}
+hr{
+    width: 50%;
+}
+h1{
+    border: 2px solid indianred;
+    color: green;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+h2{
+    border: 2px solid goldenrod;
+    color: lightgreen;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+h3{
+    border: 2px solid gainsboro;
+    color: blue;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}

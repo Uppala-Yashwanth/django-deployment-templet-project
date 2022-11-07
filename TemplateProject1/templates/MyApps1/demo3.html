@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template tags URL</title>
+    <style>
+        a{
+            color: red;
+            border: 2px solid green;
+            margin: auto;
+            padding: 2px;
+            background-color: lightgreen;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h1>Template tag url</h1>
+        <hr/>
+            <p>click here for movies</p>
+            <a href="../thankyou/">thankyou1</a><br/> <br/>
+            <p>click here for download</p>
+            <a href="/thankyou/">thankyou2</a><br/> <br/>
+            <p> click here to watch online</p>
+            <a href="{% url 'thankyou'%}">Thankyou3</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template-Inheritance</title>
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+</head>
+<body>
+    <h1> common code for all the child inheritance </h1>
+    <hr>
+    {% block child_block %}
+        wont display anything
+    {% endblock %}
+    <h3> commond for base.html</h3>
+</body>
+</html>
